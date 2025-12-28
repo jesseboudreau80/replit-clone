@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Local Agent MVP</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Replit-style Agent MVP</h1>
+      <button id="run-btn">Run Agent</button>
+    </header>
+    <section class="layout">
+      <div class="editor">
+        <div class="section-title">Editor (Monaco-style placeholder)</div>
+        <textarea id="editor" spellcheck="false">// Edit code here
+console.log('Hello from the agent MVP');
+</textarea>
+      </div>
+      <div class="console">
+        <div class="section-title">Event Console</div>
+        <pre id="console-output"></pre>
+      </div>
+    </section>
+  </div>
+  <script src="/main.js"></script>
+</body>
+</html>
