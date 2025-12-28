@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Session Console</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <div class="vignette"></div>
+    <header class="top-bar">
+      <div class="brand">
+        <div class="brand-mark">◆</div>
+        <div>
+          <p class="eyebrow">Live collaboration</p>
+          <h1>Session console</h1>
+        </div>
+      </div>
+      <button class="ghost-button">Share</button>
+    </header>
+
+    <main class="layout-grid">
+      <section class="intro-card card">
+        <div>
+          <p class="eyebrow">Overview</p>
+          <h2>Follow the narrative, command lane, and output lane.</h2>
+          <p class="lede">A calm workspace that keeps each voice distinct. Subtle depth and motion help you scan updates without feeling busy.</p>
+        </div>
+        <div class="legend">
+          <div class="legend-item">
+            <span class="pill narration">Narration</span>
+            <p>Context and guidance for the conversation.</p>
+          </div>
+          <div class="legend-item">
+            <span class="pill command">Command</span>
+            <p>Actions sent to the environment.</p>
+          </div>
+          <div class="legend-item">
+            <span class="pill output">Output</span>
+            <p>Results and feedback from the system.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="controls card">
+        <div class="controls-header">
+          <div>
+            <p class="eyebrow">Controls</p>
+            <h3>Quick actions</h3>
+          </div>
+          <div class="chip">Connected</div>
+        </div>
+        <div class="control-buttons">
+          <button class="primary">Run command</button>
+          <button class="secondary">Pause feed</button>
+          <button class="ghost">Open settings</button>
+        </div>
+      </section>
+
+      <section class="console card">
+        <div class="card-header">
+          <div>
+            <p class="eyebrow">Console</p>
+            <h3>Recent activity</h3>
+          </div>
+          <div class="filters">
+            <button class="pill-filter active">All</button>
+            <button class="pill-filter">Narration</button>
+            <button class="pill-filter">Command</button>
+            <button class="pill-filter">Output</button>
+          </div>
+        </div>
+        <div class="entry-list">
+          <article class="entry narration">
+            <div class="entry-meta">
+              <span class="pill narration">Narration</span>
+              <span class="timestamp">12:03</span>
+            </div>
+            <p class="entry-text">Setting up the workspace with fresh styling and clearer hierarchy.</p>
+          </article>
+          <article class="entry command">
+            <div class="entry-meta">
+              <span class="pill command">Command</span>
+              <span class="timestamp">12:04</span>
+            </div>
+            <p class="entry-text">npm run dev</p>
+          </article>
+          <article class="entry output">
+            <div class="entry-meta">
+              <span class="pill output">Output</span>
+              <span class="timestamp">12:04</span>
+            </div>
+            <p class="entry-text">Server ready at http://localhost:3000</p>
+          </article>
+          <article class="entry narration">
+            <div class="entry-meta">
+              <span class="pill narration">Narration</span>
+              <span class="timestamp">12:05</span>
+            </div>
+            <p class="entry-text">Reviewing the latest console updates and preparing a summary.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="events card">
+        <div class="card-header">
+          <div>
+            <p class="eyebrow">Events</p>
+            <h3>Timeline</h3>
+          </div>
+          <button class="ghost">Export log</button>
+        </div>
+        <ul class="event-list">
+          <li class="event">
+            <div class="event-meta">
+              <span class="pill command">Command</span>
+              <span class="timestamp">12:00</span>
+            </div>
+            <p class="event-text">Initialized repository and dependencies.</p>
+          </li>
+          <li class="event">
+            <div class="event-meta">
+              <span class="pill output">Output</span>
+              <span class="timestamp">12:02</span>
+            </div>
+            <p class="event-text">Tests completed successfully.</p>
+          </li>
+          <li class="event">
+            <div class="event-meta">
+              <span class="pill narration">Narration</span>
+              <span class="timestamp">12:06</span>
+            </div>
+            <p class="event-text">Summary prepared for review.</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
